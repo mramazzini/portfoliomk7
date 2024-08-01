@@ -95,7 +95,7 @@ const Projects = () => {
         <div className="project p-2 md:p-4 rounded-xl mt-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between md:h-36">
             <div className="header flex flex flex-col items-start md:p-4">
-              <h3 className="text-3xl font-bold">Max's DND Wiki</h3>
+              <h3 className="text-3xl font-bold">Max&apos;s DND Wiki</h3>
               <p>A Community Wiki Page for Dungeons in Dragons (WIP)</p>
             </div>
             <div className="buttons flex flex-row  mt-2">
