@@ -39,9 +39,9 @@ const Projects = () => {
               <h3 className="text-3xl font-bold">Roma Pizza</h3>
               <p>A Pizza Restaurant Template</p>
             </div>
-            <div className="buttons  flex flex-row  mt-2">
+            <div className="buttons  flex 2xl:flex-row flex-col mt-2">
               <button
-                className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50"
+                className="btn btn-ghost btn-sm lg:btn-md  mr-2 border border-white/50 mb-2 w-full 2xl:w-auto"
                 onClick={openRomaModal}
               >
                 Read About It <span className="hidden md:inline">-&gt;</span>
@@ -49,7 +49,7 @@ const Projects = () => {
               <Link
                 href="https://restaurant-template-rosy.vercel.app/"
                 target="_blank"
-                className="btn btn-primary btn-sm md:btn-md"
+                className="btn btn-primary btn-sm lg:btn-md"
               >
                 View Project <span className="hidden md:inline">-&gt;</span>
               </Link>
@@ -79,9 +79,9 @@ const Projects = () => {
               <h3 className="text-3xl font-bold">Nullart Music</h3>
               <p>A Music Sampler for Nullart Music</p>
             </div>
-            <div className="buttons flex flex-row  mt-2">
+            <div className="buttons flex 2xl:flex-row flex-col  mt-2">
               <button
-                className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50"
+                className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50 mb-2 w-full 2xl:w-auto"
                 onClick={openNullartModal}
               >
                 Read About It <span className="hidden md:inline">-&gt;</span>
@@ -89,7 +89,7 @@ const Projects = () => {
               <Link
                 href="https://lex-music.vercel.app/"
                 target="_blank"
-                className=" btn btn-primary btn-sm md:btn-md"
+                className=" btn btn-primary btn-sm md:btn-md "
               >
                 View Project <span className="hidden md:inline">-&gt;</span>
               </Link>
@@ -111,19 +111,19 @@ const Projects = () => {
             />{" "}
           </Link>
         </div>
+        <div className="divider md:hidden" />
       </div>{" "}
-      <div className="divider md:hidden" />
       {/* wiki */}
       <div className="featured-project xl:w-1/2 bg-base-100  px-2 md:px-4">
         <div className="project p-2 md:p-4 rounded-xl mt-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between md:h-36">
             <div className="header flex flex flex-col items-start md:p-4">
-              <h3 className="text-3xl font-bold">Max&apos;s DND Wiki</h3>
-              <p>A Community Wiki Page for Dungeons in Dragons (WIP)</p>
+              <h3 className="text-3xl font-bold">DND Wiki</h3>
+              <p>A Wiki Page for DND 5e</p>
             </div>
-            <div className="buttons flex flex-row  mt-2">
+            <div className="buttons flex 2xl:flex-row flex-col  mt-2">
               <button
-                className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50"
+                className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50 mb-2 w-full 2xl:w-auto"
                 onClick={openDndModal}
               >
                 Read About It <span className="hidden md:inline">-&gt;</span>
@@ -161,9 +161,9 @@ const Projects = () => {
               <h3 className="text-3xl font-bold">Game Engine</h3>
               <p>Two part Game Engine and Game Editor</p>
             </div>
-            <div className="buttons flex flex-row  mt-2">
+            <div className="buttons flex 2xl:flex-row flex-col  ">
               <button
-                className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50"
+                className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50 mb-2 w-full 2xl:w-auto"
                 onClick={openGameModal}
               >
                 Read About It <span className="hidden md:inline">-&gt;</span>
