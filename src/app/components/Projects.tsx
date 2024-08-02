@@ -2,16 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import useModal from "./useModal";
 import RomaPizzaData from "./Modals/RomaPizzaData";
+import DndWikiData from "./Modals/DndWikiData";
+import NullartMusicData from "./Modals/NullartMusicData";
+import GameEngineData from "./Modals/GameEngineData";
 
 const Projects = () => {
   const { modal: romaModal, openModal: openRomaModal } = useModal({
     id: "roma",
     children: <RomaPizzaData />,
   });
+  const { modal: dndModal, openModal: openDndModal } = useModal({
+    id: "dnd",
+    children: <DndWikiData />,
+  });
+  const { modal: nullartModal, openModal: openNullartModal } = useModal({
+    id: "nullart",
+    children: <NullartMusicData />,
+  });
+  const { modal: gameModal, openModal: openGameModal } = useModal({
+    id: "game",
+    children: <GameEngineData />,
+  });
   return (
     <div className="w-full flex flex-col xl:flex-row bg-base-200 rounded-xl md:p-8 p-3">
       {/* modals */}
       {romaModal}
+      {nullartModal}
+      {dndModal}
+      {gameModal}
       {/* featured prioject */}
       <div className="featured-project xl:w-1/2 bg-base-100  p-2 md:p-4">
         <div className="project p-2 md:p-4  rounded-xl">
@@ -61,7 +79,7 @@ const Projects = () => {
             <div className="buttons flex flex-row  mt-2">
               <button
                 className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50"
-                onClick={openRomaModal}
+                onClick={openNullartModal}
               >
                 Read About It <span className="hidden md:inline">-&gt;</span>
               </button>
@@ -101,7 +119,7 @@ const Projects = () => {
             <div className="buttons flex flex-row  mt-2">
               <button
                 className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50"
-                onClick={openRomaModal}
+                onClick={openDndModal}
               >
                 Read About It <span className="hidden md:inline">-&gt;</span>
               </button>
@@ -139,7 +157,7 @@ const Projects = () => {
             <div className="buttons flex flex-row  mt-2">
               <button
                 className="btn btn-ghost btn-sm md:btn-md  mr-2 border border-white/50"
-                onClick={openRomaModal}
+                onClick={openGameModal}
               >
                 Read About It <span className="hidden md:inline">-&gt;</span>
               </button>
