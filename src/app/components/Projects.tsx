@@ -32,6 +32,7 @@ const Projects = () => {
       {gameModal}
       {/* featured prioject */}
       <div className="featured-project xl:w-1/2 bg-base-100  p-2 md:p-4">
+        {/* roma */}
         <div className="project p-2 md:p-4  rounded-xl">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between md:h-36">
             <div className="header flex flex flex-col items-start md:p-4">
@@ -69,7 +70,9 @@ const Projects = () => {
               alt="Roma Pizza Image"
             />{" "}
           </Link>
-        </div>
+        </div>{" "}
+        <div className="divider md:hidden" />
+        {/* nullart */}
         <div className="project p-2 md:p-4 rounded-xl mt-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between md:h-36">
             <div className="header flex flex flex-col items-start md:p-4">
@@ -108,7 +111,9 @@ const Projects = () => {
             />{" "}
           </Link>
         </div>
-      </div>
+      </div>{" "}
+      <div className="divider md:hidden" />
+      {/* wiki */}
       <div className="featured-project xl:w-1/2 bg-base-100  px-2 md:px-4">
         <div className="project p-2 md:p-4 rounded-xl mt-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between md:h-36">
@@ -148,6 +153,8 @@ const Projects = () => {
             />{" "}
           </Link>
         </div>
+        <div className="divider md:hidden" />
+        {/* engine */}
         <div className="project p-2 md:p-4 rounded-xl mt-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between md:h-36">
             <div className="header flex flex flex-col items-start md:p-4">
